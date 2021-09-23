@@ -8,19 +8,26 @@
     rel="stylesheet"
 />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>portfolio</title>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <img src="./img/logo_port.png" alt="logo">
         <ul class="links">
             <li><a href="#intro" class="link">Home</a></li>
-            <li><a href="#" class="link">Projects</a></li>
+            <li><a href="#projects" class="link">Projects</a></li>
             <li><a href="#about" class="link">about</a></li>
             <li><a href="#contact" class="link">contact</a></li>
         </ul>
     </nav>
+    <div class="modal_container">
+        <div class="modal">
+            <img class="modal-body" src="./projectsDemo/gestiondeconge/profil.png">
+            <button class="close">fermer</button>
+        </div>
+    </div>
     <div id="intro" class="intro">
         <div class="cantent_intro">
             <h1 class="welcome">welcome to saad zahir portfolio</h1>
@@ -31,6 +38,83 @@
                 WEB & MOBILE
             </h1>
             <div class="bar"></div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <div class="project">
+            <div class="presentationProject">
+                <h1 class="titleProject">Gestion de conge</h1>
+                <h4 class="technologiesProject">Slim(php fremework) et Vuejs</h4>
+                <p class="descriptionProject">on a trois types de utilisateurs Admine, rh et salarie</p>
+            </div>
+            <div class="demos">
+                <div class="demo">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" data-key='1' src="./projectsDemo/gestiondeconge/login.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" data-key='2' src="./projectsDemo/gestiondeconge/userList.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" data-key='3' src="./projectsDemo/gestiondeconge/ajouterUtilisateur.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" data-key='4' src="./projectsDemo/gestiondeconge/managerDemandes.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" data-key='5' src="./projectsDemo/gestiondeconge/mesDemande.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" data-key='6' src="./projectsDemo/gestiondeconge/demanderConge.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" data-key='7' src="./projectsDemo/gestiondeconge/profil.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/lS0pmKilQh8">
+            </iframe>
         </div>
     </div>
     <div id="about" class="about">
@@ -57,3 +141,4 @@
     </div>
 </body>
 </html>
+<script src="./scripts.js"></script>

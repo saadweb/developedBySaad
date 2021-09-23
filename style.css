@@ -20,16 +20,18 @@
         background-color: #ffffff;
         border-radius: 10px;
     }
-    nav,.links{
+    .links{
         display: flex;
         width: 80%;
         margin: auto;
     }
     nav{
+        display: flex;
         border-bottom:1px solid white;
         position: fixed;
-        right: 10%;
-        left: 10%;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .links{
         align-items: center;
@@ -123,7 +125,81 @@
        border-left: #8825B1 solid 4px;
        border-right: #8825B1 solid 4px;
    }
+   .projects{
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    align-items: center;
+    background-color: #fff;
+    padding: 0px 10% 0px 10%;
+   }
+   .project{
+    width: 100%;
+   }
+   .presentationProject{
+       width: 100%;
+       background-color: rgb(224, 224, 224);
+       padding: 10px;
+       border-radius: 20px;
+       margin-top: 10px;
+   }
+   .demos{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .demo{
+       margin: 10px;
 
+   }
+   .card{
+       border:rgb(224, 224, 224) solid 1px;
+       border-radius: 6px;
+       padding: 5px;
+   }
+   .card-img-top{
+       width: 100%;
+       min-height: 100;
+   }
+   .card-title{
+       font-size: 20px;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   .card-text{
+    font-size: 15px;
+   
+   }
+   .modal_container{
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events:none;
+   }
+   .modal_container.show{
+    opacity: 1;
+    pointer-events:auto;
+    animation: animatetop 0.5s ease;
+   }
+   .modal{
+       width: 600px;
+       max-width: 100%;
+       background-color: #fff;
+       border-radius: 5px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+       padding: 30px 50px;
+       text-align: center;
+       
+   }
+   .modal-body{
+    width: 100%;
+    height: auto;
+   }
    @keyframes drop {
 	0% {
 		opacity: 0;
@@ -134,3 +210,7 @@
 		transform: translateY(0px);
 	}
 }
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
