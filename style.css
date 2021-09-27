@@ -209,6 +209,13 @@
        align-items: center;
        justify-content: center;
    }
+   .close{
+       background-color: rgb(68, 176, 248);
+       color: white;
+       padding: 5px;
+       border-radius: 5px;
+       border-width: 0ch;
+   }
    @keyframes drop {
 	0% {
 		opacity: 0;
